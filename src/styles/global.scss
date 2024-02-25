@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+$breakpoints: (
+    sm: 576,
+    md: 768,
+    lg: 992,
+    xl: 1200,
+);
+
+@media (min-width: $value) {
+    .container {
+        max-width: $value;
+    }
+}
